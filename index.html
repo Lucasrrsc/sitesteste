@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario Sites</title>
+    <link rel="stylesheet" href="pedido.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="favicon">
+</head>
+<body>
+    <div class="box">
+        <p>Escolha um site!</p>
+        <div class="btn-container">
+        <button>
+            <a href="https://www.jctecnologias.com.br/site1" target="blank">Site 1</a>
+        </button>
+        <button id="no">Site 2</button>
+        <button>
+            <a href="https://www.jctecnologias.com.br/site2" target="blank">Site 3</a>
+        </button>
+        </div>
+    </div>
+</body>
+    <script>
+        let button = document.getElementById('no');
+        let height = window.innerHeight - 50;
+        let width = window.innerWidth - 50;
+
+        button.addEventListener('mouseover', function() {
+            button.style.position = "absolute";
+            button.style.top = Math.random() * height + "px";
+            button.style.left = Math.random() * width + "px";
+        })
+    </script>
+</html>
